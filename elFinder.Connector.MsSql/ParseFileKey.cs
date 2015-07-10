@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using System.Web.SessionState;
 using System.Xml;
 using Dev.elFinder.Connector.MsSql.Models;
 using Dev.Framework.FileServer;
- 
+
 using elFinder.Connector.Service;
 using Newtonsoft.Json;
 
@@ -87,7 +88,7 @@ namespace elFinder.Connector.MsSql
 
         public bool IsReusable { get; private set; }
 
-
+        [NotMapped]
         private class ElfinderFileDto : ElfinderFile
         {
             public string FileUrl { get; set; }
