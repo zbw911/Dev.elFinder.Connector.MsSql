@@ -1,0 +1,128 @@
+﻿################################################################################
+# 此 .tfignore 文件由 Microsoft(R) Visual Studio 自动创建。
+#
+# 此文件中与 filespecs 匹配的本地项将不会添加到版本
+# 控制中。可签入此文件以便与其他人共享排除内容。
+#
+# 通配符为 * 和 ?。模式以递归方式匹配，除非
+# 该模式使用了 \ 字符作为前缀。
+#
+# 您可以在模式前面放置路径以使其更加明确。如果添加路径，
+# 则在路径部分不允许使用通配符。
+#
+# 行首的 # 字符指示该行是一条注释。
+#
+# ! 前缀将使模式无效。在某个项由树中更高级别
+# 的 .tfignore 文件或团队项目集合的全局排除列表排除之后，
+# 可以使用此前缀来重新包括该项。
+#
+# / 字符在 Windows 平台上被解释为 \ 字符。
+#
+# 示例:
+#
+#  # 排除 Alpha\Beta 及其所有子文件夹中以 .txt 结尾的所有文件。
+#  Alpha\Beta\*.txt
+#
+#  # 仅排除此文件夹中以 .cpp 结尾的所有文件。
+#  \*.cpp
+#
+#  # 排除此文件夹及其所有子文件夹中以 .cpp 结尾的所有文件。
+#  *.cpp
+#
+#  # 如果“Contoso”是文件夹，则排除 Contoso 及其所有子项。
+#  # 如果它是文件，则仅排除此文件夹中的“Contoso”。
+#  \Contoso
+#
+#  # 如果 Help.exe 已由更高级别的 .tfignore 文件或团队项目
+#  # 集合的全局排除列表排除，则此模式仅在此文件夹
+#  # 中重新包括它。
+#  !\Help.exe    
+#
+################################################################################
+
+\3rdparty\Autofac License.txt
+\3rdparty\Autofac.XML
+\3rdparty\Newtonsoft.Json.xml
+\elFinder.Connector\packages.config
+\elFinder.MVCTest\Scripts\elFinder-2.0\css\elfinder.min.css
+\elFinder.MVCTest\Scripts\elFinder-2.0\css\theme.css
+\elFinder.MVCTest\share\files\2013\12\25\0b\8\d\0b8d83c45f624d1aed6be331d7e683ed.pdf
+\elFinder.MVCTest\share\files\2013\12\25\11\5\c\115c86cda1d4efe171af1408e93d962c.zip
+\elFinder.MVCTest\share\files\2013\12\25\17\f\9\17f9102b5f4134573ed104f69489709e.txt
+\elFinder.MVCTest\share\files\2013\12\25\19\5\a\195a6d54b8f743b61c8eb3a3fa5a5fbf.txt
+\elFinder.MVCTest\share\files\2013\12\25\2f\5\9\2f590c6278f8427de1b52284e571b8a4.gif
+\elFinder.MVCTest\share\files\2013\12\25\31\1\0\311090c30c68a35354a956c73738a790.png
+\elFinder.MVCTest\share\files\2013\12\25\34\8\d\348d7c1146033425fabc5ecca99886d7.txt
+\elFinder.MVCTest\share\files\2013\12\25\37\e\d\37edc2090d3f9312c9d1f66c70b6179a.png
+\elFinder.MVCTest\share\files\2013\12\25\42\1\4\4214927d8fde542980e0502e0d6c5089
+\elFinder.MVCTest\share\files\2013\12\25\4e\3\a\4e3ab1f230cd75baa4b652e49f8fd777.docx
+\elFinder.MVCTest\share\files\2013\12\25\4f\0\e\4f0eb0a9b77215416687ac05c1d660e1.png
+\elFinder.MVCTest\share\files\2013\12\25\4f\0\e\4f0eb0a9b77215416687ac05c1d660e1-218_162.png
+\elFinder.MVCTest\share\files\2013\12\25\5c\3\0\5c303af08e3c08242bf3ec5b69f2657c.png
+\elFinder.MVCTest\share\files\2013\12\25\5c\3\0\5c303af08e3c08242bf3ec5b69f2657c-48_48.png
+\elFinder.MVCTest\share\files\2013\12\25\66\3\3\66332c471864d0f958a0bc0e49163bf8.txt
+\elFinder.MVCTest\share\files\2013\12\25\6a\2\5\6a254cfac81cfab3577b4c33fb195ba9.png
+\elFinder.MVCTest\share\files\2013\12\25\93\a\4\93a47a474703dc60f2c36a23a56b7480.png
+\elFinder.MVCTest\share\files\2013\12\25\93\a\4\93a47a474703dc60f2c36a23a56b7480-353_262.png
+\elFinder.MVCTest\share\files\2013\12\25\93\a\4\93a47a474703dc60f2c36a23a56b7480-402_298.png
+\elFinder.MVCTest\share\files\2013\12\25\a2\e\6\a2e68c0b4ea2582cb53d4534fea3332d.gitignore
+\elFinder.MVCTest\share\files\2013\12\25\a5\b\0\a5b0851a1b8166adf697daa486a62e79.png
+\elFinder.MVCTest\share\files\2013\12\25\a5\b\0\a5b0851a1b8166adf697daa486a62e79-48_48.png
+\elFinder.MVCTest\share\files\2013\12\25\b4\2\e\b42e55afd93be0f586f904cb60078329.txt
+\elFinder.MVCTest\share\files\2013\12\25\d7\1\2\d712a7e1e7da6c6f92ae01bbda9b96e9.gif
+\elFinder.MVCTest\share\files\2013\12\25\d7\1\2\d712a7e1e7da6c6f92ae01bbda9b96e9-48_48.gif
+\elFinder.MVCTest\share\files\2013\12\25\db\b\c\dbbc0961a0b6ff913ffc994625a866c4.txt
+\elFinder.MVCTest\share\files\2013\12\25\e9\2\5\e9256ad537384299ecb032cc87798397.txt
+\elFinder.MVCTest\share\files\2013\12\25\ec\0\f\ec0fed3fd1b6872a248a4a0e627a8633.gif
+\elFinder.MVCTest\share\files\2013\12\25\ec\0\f\ec0fed3fd1b6872a248a4a0e627a8633-48_48.gif
+\elFinder.MVCTest\share\files\2013\12\25\fc\f\d\fcfd95d8537be02e016c1ae6f2f41e62.gif
+\elFinder.MVCTest\share\files\2013\12\25\ff\f\e\fffed85ff3536e0327ec9762d7d21af2.txt
+\elFinder.MVCTest\share\files\2013\12\26\03\7\1\037190a1f71a176adc15d1301ec195c5.docx
+\elFinder.MVCTest\share\files\2013\12\26\1e\f\3\1ef3b399822b9ffcbe56471cf240b8b3.png
+\elFinder.MVCTest\share\files\2013\12\26\5a\f\6\5af6d60b4a267771bfe83bbdfb5e1d59.iso
+\elFinder.MVCTest\share\files\2013\12\26\5d\3\8\5d38fe5fa188efffd4b066569782547d.png
+\elFinder.MVCTest\share\files\2013\12\26\dc\1\9\dc198a542b31f0bac282ae837d3e8393.txt
+\elFinder.MVCTest\share\files\2013\12\26\ed\5\6\ed5632789c7eded0435e9c20e5e80e40.js
+\packages\AspNet.ScriptManager.jQuery.1.8.2\AspNet.ScriptManager.jQuery.1.8.2.nupkg
+\packages\AspNet.ScriptManager.jQuery.1.8.2\AspNet.ScriptManager.jQuery.1.8.2.nuspec
+\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24.nupkg
+\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24.nuspec
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Microsoft.AspNet.FriendlyUrls.1.0.0.nupkg
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Microsoft.AspNet.FriendlyUrls.1.0.0.nuspec
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\readme.txt
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\Site.Mobile.Master.cs.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\Site.Mobile.Master.designer.cs.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\Site.Mobile.Master.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\ViewSwitcher.ascx.cs.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\ViewSwitcher.ascx.designer.cs.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\ViewSwitcher.ascx.pp
+\packages\Microsoft.AspNet.FriendlyUrls.1.0.0\Content\App_Start\RouteConfig.cs.pp
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\Microsoft.AspNet.FriendlyUrls.Core.1.0.0.nupkg
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\Microsoft.AspNet.FriendlyUrls.Core.1.0.0.nuspec
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\zh-Hans\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\zh-Hans\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0.nupkg
+\packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0.nuspec
+\packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0\lib\net40\zh-Hans\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hans.1.0.0\lib\net45\zh-Hans\Microsoft.AspNet.FriendlyUrls.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\Microsoft.AspNet.Membership.OpenAuth.1.0.1.nupkg
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\Microsoft.AspNet.Membership.OpenAuth.1.0.1.nuspec
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\Microsoft.AspNet.Membership.OpenAuth.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\zh-Hans\Microsoft.AspNet.Membership.openauth.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\zh-Hans\Microsoft.AspNet.Membership.openauth.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1.nupkg
+\packages\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1.nuspec
+\packages\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1\lib\net40\zh-Hans\Microsoft.AspNet.Membership.openauth.xml
+\packages\Microsoft.AspNet.Membership.OpenAuth.zh-Hans.1.0.1\lib\net45\zh-Hans\Microsoft.AspNet.Membership.openauth.xml
+\packages\Microsoft.AspNet.Providers.Core.1.2\Microsoft.AspNet.Providers.Core.1.2.nupkg
+\packages\Microsoft.AspNet.Providers.Core.1.2\Microsoft.AspNet.Providers.Core.1.2.nuspec
+\packages\Microsoft.AspNet.Providers.Core.1.2\readme.html
+\packages\Microsoft.AspNet.Providers.Core.zh-Hans.1.2\Microsoft.AspNet.Providers.Core.zh-Hans.1.2.nupkg
+\packages\Microsoft.AspNet.Providers.Core.zh-Hans.1.2\Microsoft.AspNet.Providers.Core.zh-Hans.1.2.nuspec
+\packages\Microsoft.AspNet.Providers.LocalDB.1.1\Microsoft.AspNet.Providers.LocalDB.1.1.nupkg
+\packages\Microsoft.AspNet.Providers.LocalDB.1.1\Microsoft.AspNet.Providers.LocalDB.1.1.nuspec
+\packages\Microsoft.AspNet.Providers.LocalDB.1.1\content\web.config.transform
+\packages\Microsoft.AspNet.Providers.LocalDB.1.1\tools\Install.ps1

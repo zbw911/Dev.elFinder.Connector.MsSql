@@ -1,0 +1,60 @@
+﻿ 
+
+/****** Object:  Table [dbo].[ElfinderFile]    Script Date: 05/01/2014 16:09:21 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[ElfinderFile](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Parent_id] [int] NOT NULL,
+	[Name] [varchar](256) NOT NULL,
+	[Content] [varchar](256) NOT NULL,
+	[Size] [int] NOT NULL,
+	[Mtime] [datetime2](7) NOT NULL,
+	[Mime] [varchar](256) NOT NULL,
+	[Read] [bit] NOT NULL,
+	[Write] [bit] NOT NULL,
+	[Locked] [bit] NOT NULL,
+	[Hidden] [bit] NOT NULL,
+	[Width] [int] NOT NULL,
+	[Height] [int] NOT NULL,
+	[IsDelete] [bit] NULL,
+ CONSTRAINT [PK_elfinder_file] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder_f__size__7E6CC920]  DEFAULT ((0)) FOR [Size]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder_f__mime__7F60ED59]  DEFAULT ('unknown') FOR [Mime]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder_f__read__00551192]  DEFAULT ('1') FOR [Read]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder___write__014935CB]  DEFAULT ('1') FOR [Write]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder___locke__023D5A04]  DEFAULT ('0') FOR [Locked]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF__elfinder___hidde__03317E3D]  DEFAULT ('0') FOR [Hidden]
+GO
+
+ALTER TABLE [dbo].[ElfinderFile] ADD  CONSTRAINT [DF_ElfinderFile_IsDelete]  DEFAULT ((0)) FOR [IsDelete]
+GO
+
+

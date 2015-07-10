@@ -1,0 +1,14 @@
+# Build and Object Folders
+DropPrefs/bin/
+DropPrefs/obj/
+DropPrefs/publish/
+
+#User Specific Files
+*.user
+*.suo
+DropPrefs/*.DotSettings
+
+#Resource Caches
+_ReSharper.*
+*.sln.cache
+*.cachefile

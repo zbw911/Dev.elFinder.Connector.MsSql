@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>elFinder 2.0</title>
+
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <!-- jQuery and jQuery UI (REQUIRED) -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+
+    <!-- elFinder CSS (REQUIRED) -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/elfinder.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css">
+
+    <!-- elFinder JS (REQUIRED) -->
+    <script type="text/javascript" src="js/elfinder.min.js"></script>
+
+ 
+    
+    <script src="Scripts/Base64.js"></script>
+   
+
+   
+
+    <script type="text/javascript" charset="utf-8">
+
+        function my64() {
+            var base64 = BASE64.encoder(str);//返回编码后的字符
+
+            var unicode = BASE64.decoder(base64Str);//返回会解码后的unicode码数组。
+
+            //可由下面的代码编码为string
+
+            var str = '';
+            for (var i = 0, len = unicode.length ; i < len ; ++i) {
+                str += String.fromCharCode(unicode[i]);
+            }
+        }
+
+        function bin2String(unicode) {
+            var str = '';
+            for (var i = 0, len = unicode.length ; i < len ; ++i) {
+                str += String.fromCharCode(unicode[i]);
+            }
+
+            return str;
+        }
+
+        function Encode(input) {
+            //	byte[] bytes = Encoding.UTF8.GetBytes( input );
+            //string encoded = Convert.ToBase64String( bytes, Base64FormattingOptions.None );
+            //// need to replace some special chars to make whole string compatible
+            //encoded = encoded.Replace( '+', '«' )
+            //                .Replace( '/', '»' )
+            //                .Replace( '=', '§' );
+            //return encoded;
+        }
+
+        function Decode(hash) {
+            hash = hash.substr(3);
+            hash = hash.replace('«', '+')
+							.replace('»', '/')
+							.replace('§', '=');
+            return BASE64.decoder(hash);
+        }
+        $(function () {
+            //$('.fileManager').elfinder({
+            //    url: '/elfinder.connector',
+            //    height: 600
+            //});
+
+            $('#dialog').click(function () {
+                var fm = $('<div/>').dialogelfinder({
+                    url: '/elfinder.connector',
+                    lang: 'en',
+                    width: 840,
+                    destroyOnClose: true,
+                    getFileCallback: function (files, fm) {
+                        var src = event.srcElement;
+                        //debugger;
+                        //console.log(files);
+                    },
+                    commandsOptions: {
+                        dblclick: {
+                            oncomplete: 'close',
+                            folders: false
+                        }
+                    },
+                    handlers: {
+                        dblclick: function (event, elfinderInstance) {
+                            //debugger;
+
+                            var data = event.data.file;
+
+                            var hash = Decode(data);
+
+                            hash = bin2String(hash);
+
+                            if (hash.indexOf(".") > 0) {
+                                window.alert('is file');
+                                $('.dialogelfinder-drag-close').click();
+
+                                window.alert("fileKey is " + hash);
+                            } else {
+                                window.alert('folder');
+                            }
+                            //elfinderInstance.dialogelfinder('close');
+
+
+                            console.log(event.data);
+                            console.log(event.data.file); // selected files hashes list
+                        }
+                    }
+
+                }).dialogelfinder('instance');
+
+
+
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="fileManager">finder</div>
+    <!-- Element where elFinder will be created (REQUIRED) -->
+    <div id="elfinder"></div>
+    <button id="dialog">窗口</button>
+
+</body>
+</html>

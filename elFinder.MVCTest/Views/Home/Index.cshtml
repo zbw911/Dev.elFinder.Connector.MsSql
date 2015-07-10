@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<script src="~/Scripts/kindeditor-4.1.10/kindeditor-all.js"></script>
+<script src="~/Scripts/kindeditor-4.1.10/plugins/elfinder/elfinder.js"></script>
+
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<!-- jQuery and jQuery UI (REQUIRED) -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+@*<script src="~/Scripts/jquery-1.8.2.js"></script>
+
+<script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+
+<link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" />*@
+
+<!-- elFinder CSS (REQUIRED) -->
+<link rel="stylesheet" type="text/css" media="screen" href="/Scripts/elFinder/css/elfinder.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/Scripts/elFinder/css/theme.css">
+
+<!-- elFinder JS (REQUIRED) -->
+<!--<script type="text/javascript" src="~/js/elfinder.min.js"></script>-->
+<script src="~/Scripts/elFinder/js/elfinder.min.js"></script>
+<script src="~/Scripts/util/Base64.js"></script>
+<script src="~/Scripts/elFinder-2.0/i18n/elfinder.zh_CN.js"></script>
+<script src="~/Scripts/util/ElDialog.js"></script>
+
+<div class="fileManager">finder</div>   
+
+ <script type="text/javascript" charset="utf-8">
+     $(function () {
+         $('.fileManager').elfinder({
+             url: '@Url.Content("~/elfinder.connector")',
+             height: 600,
+             lang: 'zh_CN'
+         });
+     });
+</script>
